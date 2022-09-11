@@ -1,0 +1,29 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    
+    <!-- primary|extension Inherited .:Form:. view for "model" -->
+    <record id="view_asset_car_form_inherited" model="ir.ui.view">
+        <field name="name">view.asset_car.form_inherited</field>
+        <field name="model">account.asset</field>
+        <field name="inherit_id" ref="account_asset.view_account_asset_form" />
+        <field name="type">form</field>
+        <!-- <field name="mode"></field> -->
+        <field name="arch" type="xml">
+          
+          <xpath expr="//page[@name='related_items']" position="after">
+              <page string="Car Detiels" name="car_detiels" >     
+                  <field name="car_is"/>
+                  <field name="vehicle_registration_expired"/>
+                  <field name="date_of_the_periodic_examination"/>
+                  <field name="periodic_maintenance_history"/>     
+             </page>
+          </xpath>
+          
+           
+        </field>
+    </record>
+    
+   
+  </data>
+</odoo>
