@@ -14,17 +14,17 @@
           <xpath expr="//field[@name='name']" position="after">
                <br/>
                 <group>
-                  <label for="car_is" string="Car Is"/> 
+                  <!-- <label for="car_is" string="Car Is"/>  -->
                   <field name="car_is"/>
                 </group>
                 <group>
-                  <label for="vehicle_registration_expired" string="Vehicle Registration Expired" attrs="{'invisible':[('car_is','=',False)]}" />
+                  <!-- <label for="vehicle_registration_expired" string="Vehicle Registration Expired" attrs="{'invisible':[('car_is','=',False)]}" /> -->
                   <field name="vehicle_registration_expired"  attrs="{'invisible':[('car_is','=',False)]}" />
 
-                  <label for="date_of_the_periodic_examination" string="Date Of The Periodic Examination" attrs="{'invisible':[('car_is','=',False)]}" />
+                  <!-- <label for="date_of_the_periodic_examination" string="Date Of The Periodic Examination" attrs="{'invisible':[('car_is','=',False)]}" /> -->
                   <field name="date_of_the_periodic_examination" attrs="{'invisible':[('car_is','=',False)]}"/>
 
-                  <label for="periodic_maintenance_history" string="Periodic Maintenance History" attrs="{'invisible':[('car_is','=',False)]}" />
+                  <!-- <label for="periodic_maintenance_history" string="Periodic Maintenance History" attrs="{'invisible':[('car_is','=',False)]}" /> -->
                   <field name="periodic_maintenance_history" attrs="{'invisible':[('car_is','=',False)]}"/>     
                 </group>
           </xpath>
