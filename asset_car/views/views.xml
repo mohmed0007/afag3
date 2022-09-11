@@ -12,6 +12,7 @@
         <field name="arch" type="xml">
           
           <xpath expr="//field[@name='name']" position="after">
+               </br>
                 <group>
                   <!-- <label for="car_is" string="Car Is"/> -->
                   <field name="car_is"/>

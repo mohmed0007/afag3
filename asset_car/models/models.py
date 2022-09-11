@@ -6,7 +6,7 @@ class AccountAsset(models.Model):
     _inherit = "account.asset"
     
     car_is = fields.Boolean(
-        string='Is Car', default=False
+        string='', default=False
     )
 
     
