@@ -12,6 +12,7 @@
         <field name="arch" type="xml">
           
           <xpath expr="//field[@name='name']" position="after">
+            <group>
                <br/>
                 <group>
                   <!-- <label for="car_is" string="Car Is"/>  -->
@@ -27,6 +28,7 @@
                   <!-- <label for="periodic_maintenance_history" string="Periodic Maintenance History" attrs="{'invisible':[('car_is','=',False)]}" /> -->
                   <field name="periodic_maintenance_history" attrs="{'invisible':[('car_is','=',False)]}"/>     
                 </group>
+            </group>
           </xpath>
           
            
