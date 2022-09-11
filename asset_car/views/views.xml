@@ -13,7 +13,7 @@
           
           <xpath expr="//field[@name='name']" position="after">
                 <group>
-                  <label for="car_is" string="Car Is"/>
+                  <!-- <label for="car_is" string="Car Is"/> -->
                   <field name="car_is"/>
 
                   <label for="vehicle_registration_expired" string="Vehicle Registration Expired" attrs="{'invisible':[('car_is','=',False)]}" />
