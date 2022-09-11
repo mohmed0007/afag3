@@ -20,13 +20,13 @@
                 </group>
                 <group>
                   <!-- <label for="vehicle_registration_expired" string="Vehicle Registration Expired" attrs="{'invisible':[('car_is','=',False)]}" /> -->
-                  <field name="vehicle_registration_expired"  attrs="{'invisible':[('car_is','=',False)]}" />
+                 <h6> <field name="vehicle_registration_expired"  attrs="{'invisible':[('car_is','=',False)]}" /> </h6>
 
                   <!-- <label for="date_of_the_periodic_examination" string="Date Of The Periodic Examination" attrs="{'invisible':[('car_is','=',False)]}" /> -->
-                  <field name="date_of_the_periodic_examination" attrs="{'invisible':[('car_is','=',False)]}"/>
+                  <h6>  <field name="date_of_the_periodic_examination" attrs="{'invisible':[('car_is','=',False)]}"/> </h6> 
 
                   <!-- <label for="periodic_maintenance_history" string="Periodic Maintenance History" attrs="{'invisible':[('car_is','=',False)]}" /> -->
-                  <field name="periodic_maintenance_history" attrs="{'invisible':[('car_is','=',False)]}"/>     
+                  <h6>  <field name="periodic_maintenance_history" attrs="{'invisible':[('car_is','=',False)]}"/> </h6>   
                 </group>
             </group>
           </xpath>
