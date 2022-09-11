@@ -17,13 +17,13 @@
                   <field name="car_is"/>
 
                   <label for="vehicle_registration_expired" string="Vehicle Registration Expired"/>
-                  <field name="vehicle_registration_expired"/>
+                  <field name="vehicle_registration_expired"  attrs="{'invisible':[('car_is','=',False)]}" />
 
                   <label for="date_of_the_periodic_examination" string="Date Of The Periodic Examination"/>
-                  <field name="date_of_the_periodic_examination"/>
+                  <field name="date_of_the_periodic_examination" attrs="{'invisible':[('car_is','=',False)]}"/>
 
                   <label for="periodic_maintenance_history" string="Periodic Maintenance History"/>
-                  <field name="periodic_maintenance_history"/>     
+                  <field name="periodic_maintenance_history" attrs="{'invisible':[('car_is','=',False)]}"/>     
                 </group>
           </xpath>
           
