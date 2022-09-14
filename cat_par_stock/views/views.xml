@@ -1,0 +1,26 @@
+<odoo>
+  <data>
+  
+      <record id="cat_par_view_picking_form" model="ir.ui.view">
+        <field name="name">stock.picking.inherit.cat.view.form</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form"/>
+        <field name="arch" type="xml">
+          <!-- Add your xpath here -->
+
+             <!-- <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='discount']" position="before">
+                    <field name="discount_type" groups="product.group_discount_per_so_line" optional="show"/>
+              </xpath> -->
+
+      m
+            <xpath expr="//field[@name='move_ids_without_package']/tree/field[@name='product_uom']" position="after">
+              <!-- Add your fields here -->
+                 <field name="cus_account_stock"/>
+            </xpath>
+        </field>
+      </record>
+
+
+
+  </data>
+</odoo>
