@@ -190,6 +190,8 @@ class building_unit(models.Model):
             'res_id': reservation_id.id,
         }
 
+    rel_anyletec_prop = fields.Many2one('account.analytic.account','Analytic Account')
+
 
 class components_line(models.Model):
     _name = "components.line"    

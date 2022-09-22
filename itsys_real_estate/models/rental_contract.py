@@ -139,7 +139,11 @@ class rental_contract(models.Model):
                              ('cancel','Canceled'),
                              ], 'State', default=lambda *a: 'draft')
     account_income= fields.Many2one('account.account','Income Account', default=_default_income_account)
-    account_analytic_id= fields.Many2one('account.analytic.account', 'Analytic Account')
+    account_analytic_id= fields.Many2one('account.analytic.account',string='Analytic Account',related='building_unit.rel_anyletec_prop')
+    #,
+    # currency_base = fields.Many2one('res.currency'
+    # 'Currency', related='template_id.currency_id',
+    #  readonly=True) 
     account_security_deposit= fields.Many2one('account.account', 'Security Deposit Account', default=_default_security_deposit_account)
     voucher_count= fields.Integer('Voucher Count',compute='_voucher_count')
     entry_count= fields.Integer('Entry Count',compute='_entry_count')
