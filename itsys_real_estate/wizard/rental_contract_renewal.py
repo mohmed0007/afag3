@@ -17,7 +17,7 @@ class rental_contract_renewal(models.TransientModel):
         rental_pool=  self.env['rental.contract']
         contract = rental_pool.browse(self._context.get('active_id'))
         copied= contract.copy()
-        copied.write({'date_from':self.date_from,'date_to':self.date_to,'origin':contract.name})
+        copied.write({'date_from':self.date_from,'date_to':self.date_to,'origin':contract.name, 'building_unit':contract.building_unit.id})
         contract.write({'state':'renew'})
 
         return {
