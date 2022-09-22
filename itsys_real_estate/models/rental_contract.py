@@ -120,7 +120,7 @@ class rental_contract(models.Model):
     no_of_floors= fields.Integer ('# Floors')
     building_code= fields.Char    ('Code', size=16)
     #Building Unit Info
-    building_unit= fields.Many2one('product.template','Building Unit', copy=False, required=True,domain=[('is_property', '=', True),('state', '=', 'free')])
+    building_unit= fields.Many2one('product.template','Building Unit', required=True,domain=[('is_property', '=', True),('state', '=', 'free')])
     unit_code= fields.Char    ('Code', size=16)
     floor= fields.Char    ('Floor', size=16)
     address= fields.Char    ('Address')
