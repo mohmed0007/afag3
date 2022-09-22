@@ -189,7 +189,7 @@ class building_unit(models.Model):
             'target':'current',
             'res_id': reservation_id.id,
         }
-
+    
     rel_anyletec_prop = fields.Many2one('account.analytic.account','Analytic Account')
 
 
