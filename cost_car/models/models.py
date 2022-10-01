@@ -22,7 +22,7 @@ from odoo import api, fields, models, _
 
 class StockPickinganalyticAccount(models.Model):
     _inherit = "stock.picking"
-    analytic_account_id = fields.Many2one('account.analytic.account','Analytic Account')
+    analytic_account_id = fields.Many2one('account.analytic.account','Analytic')
     
 
     # def button_validate(self):
