@@ -1,5 +1,16 @@
 # -*- coding: utf-8 -*-
 from odoo import api, fields, models
+from odoo.exceptions import ValidationError
+
+
+class ResConfigSettings(models.TransientModel):
+    _inherit = 'res.config.settings'
+    expiry_before_days_vehicle_registration_expired = fields.Integer(string="Before Days",default=1)
+    expiry_before_days_date_of_the_periodic_examination = fields.Integer(string="Before Days",default=1)
+    expiry_before_days_periodic_maintenance_history = fields.Integer(string="Before Days",default=1)
+    expiry_before_days_periodic_maintenance_history_month = fields.Integer(string="Before Month",default=1)
+    expiry_before_days_date_of_the_periodic_examination_month = fields.Integer(string="Before Month",default=1)
+    expiry_before_days_periodic_maintenance_history_month = fields.Integer(string="Before Month",default=1)
 
 
 class AccountAsset(models.Model):
